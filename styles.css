@@ -2,25 +2,31 @@
     box-sizing: border-box;
     padding:0;
     margin:0;
+    
 }
 
 body {
-    height: 100vh;
+    height: 100%;
     width: 100vw;
+    background-color: black ;
+    overflow-x:hidden;
 }
 header {
     display:flex;
     align-items: center;
-    backdrop-filter: blur(20    px);
-    height:12vh;
-    width: 90vw;
     margin:0 auto;
-  
-}
+    backdrop-filter: blur(2px);
+    height:12vh;
+    width: 92vw;
+ 
+    color:white;    
+}   
 
 #logo {
     height:6vh;
     margin:15px;
+    -webkit-filter: grayscale(1) invert(1);
+
 }
 .nav-links, .logo-container {
     display: flex;
@@ -47,43 +53,61 @@ nav {
 }
 
 .test {
-    display:flex;
-    flex-direction: column;
+    color:white;        
     background-size: 100%;
     width: 100vw;
-    height: 80vh;
-    background-image: url('./images/header-bg.avif')  ;
+    height: 90vh;
+    background-image: url('./images/bg-img3.jpg ')  ;
     
     }  
 .test-inner {
+    display:flex;
+    flex-direction: column;
+    backdrop-filter: blur(2px);
+    
     height:100%;
     width:100%;
-    backdrop-filter: blur(2px);
+   
 } 
 
 .book-lesson-container {  
-    margin: auto;
+    position:relative;
+    width:95%;
+    bottom: 20px;
     display: flex; 
     flex-direction: column;
-    align-items: center ;
-    justify-content: center;
-    height:100%;
-
+    align-items: flex-end;
+   
+    top:25vh;
+    height:auto;
+    padding:0px;
 }
 
 #book-button {
-    margin-top:20px;
-    padding:7px;  
-    width: 30%; 
-    outline: 1px solid white;
-    background-color: hsla(280, 36%, 56%, 1);
+    white-space: nowrap;
+    margin-top:10vh;
+    padding: 15px 10px;  
+    width: 15%; 
+    outline: 1px solid rgba(208, 3, 3, 0.744);
     border: none;
     border-radius: 3px;
-    color:rgba(255,255,255, .9)
+    color:white;
+    font-weight: 600;
+    font-size: 1.2vw;
+    background-color: transparent;
+    margin-right: 8vw;
     
 }
 #lesson-desc {
-    font-size: 30px;
+    
+    font-size: 1.9vw;
+    align-self: flex-end;
+    font-weight: 600;
+    
+}
 
+#book-button:hover {
+    background-color:rgba(47, 47, 47, 0.895);
+    cursor: pointer;
 }
 
