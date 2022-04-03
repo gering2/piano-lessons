@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -37,20 +39,22 @@
     <div class="lesson-description">
   
    
-        <div class="box">
-            <div class="icon-bg">
+        <div class="box"data-aos="fade-right" data-aos-duration="1000" data-aos-delay="60">
+            <div class="icon-bg" data-aos>
                 <img class="icon settings" src="./images/settings-alt.svg">
             </div>
             <h3 class="description-title">Flexible</h3>
             <p>I think it is important for students to play the music that they enjoy. That is why, although being classically trained, I prefer to allow students to choose what material we will learn from.</p>
         </div>
-        <div class="box">
+        <div class="box" data-aos="flip-down" data-aos-duration="1000" data-aos-delay="60">
             <div class="icon-bg">
                 <img class="icon responsive" src="./images/messages-f.svg">
             </div>
             <h3 class="description-title">Responsive</h3>
             <p>Since there is often a lot of time between lessons, I am active on email. Students can contact me whenever they run into issues in their playing or have any questions in general. You can reach me at (insert email here)</p>
-        </div> <div class="box">
+        </div> 
+        <div class="box"data-aos="fade-left" data-aos-duration="1000" data-aos-delay="60">
+
             <div class="icon-bg">
                 <img class="icon layers" src="./images/layers.svg">
             </div>
@@ -62,7 +66,7 @@
 </section>
 <section>
     <div class= "title container">
-        <p id="price-title">Pricing Plans</p>
+        <p id="price-title" data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="60">Pricing Plans</p>
         <img src="./images/credit-card.svg" class="icon credit-card">
     </div>
     <div class = "prices-grid ">
@@ -75,5 +79,9 @@
         </div>
     </div>
 </section>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>
 </html>
