@@ -124,6 +124,7 @@ input:-webkit-autofill {
     align-self: flex-end;
     font-weight: 600;
     animation: slide 1s;
+    margin-top:10vh;
 }
 
 .button:hover {
@@ -232,6 +233,12 @@ section {
     word-wrap: break-word;
     padding: 20px 20px;
     overflow-y:auto;
+    
+}
+
+.box:hover {
+    animation:modal-grow .25s forwards;
+
 }
 .pricing-description {
     padding: 5px;
@@ -244,7 +251,21 @@ section {
     }
 }
 .prices-box {
-    min-height: 40vh;
+    min-height: 20vh;
+    max-height: 30vh;
+
 }
 
-media screen and 
+
+.prices-box:hover {
+    animation:modal-grow .25s forwards;
+}
+
+@keyframes modal-grow {
+    from {
+        transform: translateY(0)
+    }
+    to {
+        transform: translateY(-1vh)
+    }
+}
