@@ -4,6 +4,8 @@
     margin:0;
     font-family: 'Manrope', sans-serif;
     scroll-behavior: smooth;
+    scroll-margin-top:4rem;
+
 }
 
 body {
@@ -22,7 +24,12 @@ header {
  
     color:white;    
 }   
-
+footer {
+    height: 40vh;
+    border-top: .5px solid rgb(54, 54, 54);
+    background-color: rgba(52, 52, 52, 0.3); 
+    margin-top: 16vh;   
+}
 #logo {
     height:6vh;
     margin:15px;
@@ -47,7 +54,9 @@ nav {
 .nav-links {
     justify-content: space-around;
     list-style: none;
+   
 }
+
 
 .nav-link {
     text-decoration: none;
@@ -63,8 +72,8 @@ nav {
     background-size: 100%;
     width: 100vw;
     height: 98vh;
-    background-image: url('./images/bg-img3.jpg ')  ;
-    
+    background-image: url('./images/bg-img3.jpg ')   ;
+    background-repeat: no-repeat;
     }  
 .test-inner {
     display:flex;
@@ -95,7 +104,10 @@ nav {
     border-radius: 3px;
     border: none;
 
-
+}
+input:-webkit-autofill {
+    background-color: transparent !important;
+    -webkit-box-shadow: 0 0 0 50px rgb(60, 60, 60) inset;
 }
 #book-button {
     margin-top:10vh;
@@ -120,24 +132,48 @@ nav {
 }
 
 
-.lesson-description{
+#about-grid{
     display: grid;
     grid-gap: 10px;
     grid-template:repeat(1,minmax(0,1fr)) / repeat(3,minmax(0,1fr));    
     column-gap: 10px;
     width:90%;
     margin:auto;
-    margin-top:20px;
+    margin-top:40px;
     min-height: 0;
     min-width: 0;
-    margin-bottom: 30px;
+  
 
 }   
+.pricing-box-layout {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cart-button {
+    padding: 10px 10px;
+    width:40%;  
+   
+}
 
+#fs-frm {
+    display:flex;
+    flex-direction: column;
+    
+}
+.price {
+    font-size:20px;
+    font-weight:600;
+    padding:10px;
+}
+.payment-duration {
+    font-weight:300;
+  
+}
 .icon { 
     -webkit-filter: grayscale(1) invert(1);
 }
-.container {
+#price-title-container {
     margin:auto;
     display: flex;
     align-items: center;
@@ -147,7 +183,8 @@ nav {
     padding: 10px 0px;
     border-radius: 10px;
     width: 30%;
-    margin-bottom:20px;
+    margin-bottom:30px;
+    margin-top:10px;
 
 }
 #price-title {
@@ -173,7 +210,9 @@ nav {
     margin-bottom:7px;
     
 }
-
+section {
+    margin-bottom: 10vh;
+}
 .prices-grid {
     display: grid;
     grid-gap: 10px;
@@ -181,6 +220,7 @@ nav {
     column-gap: 10px;
     width:60%;
     margin:auto;
+  
 }
 .box {
     background-color:rgba(106, 106, 106, 0.3);    
@@ -192,10 +232,19 @@ nav {
     word-wrap: break-word;
     padding: 20px 20px;
     overflow-y:auto;
-    
+}
+.pricing-description {
+    padding: 5px;
+    padding-bottom:10px;
+    font-weight:100;
 }
 @keyframes slide {
     from {
         margin-right:50%;
     }
 }
+.prices-box {
+    min-height: 40vh;
+}
+
+media screen and 
