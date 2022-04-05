@@ -13,6 +13,8 @@ body {
     width: 100vw;
     background-color: black ;
     overflow-x:hidden;
+    padding:0px;
+    margin:0px;
 }
 header {
     display:flex;
@@ -165,11 +167,9 @@ input:-webkit-autofill {
 .price {
     font-size:20px;
     font-weight:600;
-    padding:10px;
 }
 .payment-duration {
     font-weight:300;
-  
 }
 .icon { 
     -webkit-filter: grayscale(1) invert(1);
@@ -242,7 +242,7 @@ section {
 }
 .pricing-description {
     padding: 5px;
-    padding-bottom:10px;
+    padding-bottom:15px;
     font-weight:100;
 }
 @keyframes slide {
@@ -252,8 +252,8 @@ section {
 }
 .prices-box {
     min-height: 20vh;
-    max-height: 30vh;
-
+    max-height: 25vh;
+    padding:10px;
 }
 
 
