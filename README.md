@@ -1,4 +1,4 @@
-# piano-lessons
+## Overview
 A mock website for piano lessons. This project was mainly used to learn CSS grid.
 
 ## Built with
