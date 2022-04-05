@@ -254,6 +254,7 @@ section {
     min-height: 20vh;
     max-height: 25vh;
     padding:10px;
+    overflow-y:hidden;
 }
 
 
