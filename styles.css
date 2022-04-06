@@ -59,7 +59,6 @@ nav {
    
 }
 
-
 .nav-link {
     text-decoration: none;
     cursor:pointer;
@@ -69,15 +68,16 @@ nav {
     text-decoration: underline;
 }
 
-.test {
+.main {
     color:white;        
     background-size: 100%;
     width: 100vw;
     height: 98vh;
     background-image: url('./images/bg-img3.jpg ')   ;
     background-repeat: no-repeat;
-    }  
-.test-inner {
+}  
+
+.header-container {
     display:flex;
     flex-direction: column;
     backdrop-filter: blur(2px);
@@ -107,10 +107,12 @@ nav {
     border: none;
 
 }
+
 input:-webkit-autofill {
     background-color: transparent !important;
     -webkit-box-shadow: 0 0 0 50px rgb(60, 60, 60) inset;
 }
+
 #book-button {
     margin-top:10vh;
     padding: 15px 10px;  
@@ -120,6 +122,7 @@ input:-webkit-autofill {
     margin-right: 8vw;
     animation: slide 1.25s forwards;
 }
+
 #lesson-desc {
     
     font-size:1.5rem;
@@ -147,12 +150,14 @@ input:-webkit-autofill {
     min-width: 0;
   
 
-}   
+}  
+
 .pricing-box-layout {
     display:flex;
     flex-direction: column;
     align-items: center;
 }
+
 .cart-button {
     padding: 10px 10px;
     width:40%;  
@@ -164,16 +169,20 @@ input:-webkit-autofill {
     flex-direction: column;
     
 }
+
 .price {
     font-size:20px;
     font-weight:600;
 }
+
 .payment-duration {
     font-weight:300;
 }
+
 .icon { 
     -webkit-filter: grayscale(1) invert(1);
 }
+
 #price-title-container {
     margin:auto;
     display: flex;
@@ -188,17 +197,19 @@ input:-webkit-autofill {
     margin-top:10px;
 
 }
+
 #price-title {
     color:white;
     display:inline;
     padding: 0px 10px;
 }
+
 .description-title {
     text-align: center;
     margin-bottom:6px;  
     font-size: 32px;
-    
 }
+
 .icon-bg {
     display:flex;
     align-items:center;
@@ -209,11 +220,12 @@ input:-webkit-autofill {
     background-color:rgba(208, 3, 3, 0.98);
     border-radius:50%;
     margin-bottom:7px;
-    
 }
+
 section {
     margin-bottom: 10vh;
 }
+
 .prices-grid {
     display: grid;
     grid-gap: 10px;
@@ -221,8 +233,8 @@ section {
     column-gap: 10px;
     width:60%;
     margin:auto;
-  
 }
+
 .box {
     background-color:rgba(106, 106, 106, 0.3);    
     border-radius: 4px;
@@ -232,31 +244,32 @@ section {
     min-width: 0;
     word-wrap: break-word;
     padding: 20px 20px;
-    overflow-y:auto;
-    
+    overflow-y:auto; 
 }
 
 .box:hover {
     animation:modal-grow .25s forwards;
 
 }
+
 .pricing-description {
     padding: 5px;
     padding-bottom:15px;
     font-weight:100;
 }
+
 @keyframes slide {
     from {
         margin-right:50%;
     }
 }
+
 .prices-box {
     min-height: 20vh;
     max-height: 25vh;
     padding:10px;
     overflow-y:hidden;
 }
-
 
 .prices-box:hover {
     animation:modal-grow .25s forwards;
@@ -270,6 +283,7 @@ section {
         transform: translateY(-1vh)
     }
 }
+
 @media screen and (max-width: 950px){
     #lesson-desc {
         font-size: 1rem;
