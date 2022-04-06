@@ -70,7 +70,7 @@ nav {
 
 .main {
     color:white;        
-    background-size: 100% 100%;
+    background-size: 100%   100%;
     width: 100vw;
     height: 100vh;
     background-image: url('./images/bg-img3.jpg ')   ;
@@ -284,7 +284,7 @@ section {
     }
 }
 
-@media screen and (max-width: 950px){
+@media screen and (max-width: 1200px){
     #lesson-desc {
         font-size: 1rem;
         
@@ -308,7 +308,7 @@ section {
     }
 }
 
-@media screen and (max-width: 550px)  {
+@media screen and (max-width: 500px)  {
     #lesson-descr {
         font-size: .5rem;
     }
@@ -322,11 +322,15 @@ section {
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 550px) {
     .description-title {
         font-size: 1rem;
     }
     .description-text {
         font-size: .75rem;
+    }
+    .book-lesson-container {
+        width:150px;
+        left:10px;
     }
 }
