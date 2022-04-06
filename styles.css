@@ -70,9 +70,9 @@ nav {
 
 .main {
     color:white;        
-    background-size: 100%;
+    background-size: 100% 100%;
     width: 100vw;
-    height: 98vh;
+    height: 100vh;
     background-image: url('./images/bg-img3.jpg ')   ;
     background-repeat: no-repeat;
 }  
@@ -88,14 +88,14 @@ nav {
 } 
 
 .book-lesson-container {  
-    position:relative;
+    position:absolute;
     width:97%;
-    bottom: 20px;
+    top:200px;
     display: flex; 
    
     justify-content: flex-end;
    
-    top:25vh;
+   
     height:auto;
     padding:0px;
 }
@@ -124,7 +124,7 @@ input:-webkit-autofill {
 }
 
 #lesson-desc {
-    
+  
     font-size:1.5rem;
     align-self: flex-end;
     font-weight: 600;
@@ -295,8 +295,8 @@ section {
 @media screen and (max-width: 750px)  {
     .book-lesson-container {
         justify-content: flex-start;
-        position: relative;
-        top: 40vh;
+        position: absolute;
+        top: 300px;
  
     }
     .nav-link{
