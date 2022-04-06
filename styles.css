@@ -315,4 +315,18 @@ section {
    
 }
 
+@media screen and (max-width: 850px) {
+    #about-grid {
+        grid-template:  repeat(3,minmax(0,1fr)) / minmax(0,1fr);    
+        width:60%;
+    }
+}
 
+@media screen and (max-width: 400px) {
+    .description-title {
+        font-size: 1rem;
+    }
+    .description-text {
+        font-size: .75rem;
+    }
+}
